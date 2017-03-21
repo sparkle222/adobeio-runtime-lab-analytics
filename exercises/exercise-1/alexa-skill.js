@@ -80,7 +80,7 @@ var main = function (event) {
                     });
                 alexaSDK.APP_ID = APP_ID;
                 alexaSDK.resources = languageStrings;
-
+                alexaSDK.registerHandlers(newSessionHandlers);
                 return alexaSDK.execute();
             } catch (err) {
                 console.log(err);
